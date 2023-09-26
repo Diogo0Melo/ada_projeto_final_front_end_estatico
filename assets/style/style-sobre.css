@@ -1,0 +1,12 @@
+.tamanho-carrosel{
+    width: 400px;
+    position: absolute !important;
+    right: 160px; 
+    top: 50px; 
+}
+.caixa-de-texto{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
