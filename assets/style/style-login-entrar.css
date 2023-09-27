@@ -6,15 +6,15 @@ form {
     border-radius: 3px;
 }
 
-form > h3 {
+form h3 {
     text-align: center;
 }
 
-label {
+form label {
     margin-bottom: 8px;
 }
 
-input {
+form input {
     width: 100%;
     /* background-color: rgb(241, 239, 239); */
     padding: 6px 12px;
@@ -22,23 +22,23 @@ input {
     border: 1px solid rgb(212, 212, 212);
 }
 
-input[type="checkbox"] {
+form input[type="checkbox"] {
     width: auto;
 }
 
-form > button {
+form button {
     padding: 10px 20px;
     border-radius: 3px;
     background-color: var(--verde-primario);
     transition: 300ms;
 }
 
-button:hover {
+form button:hover {
     cursor: pointer;
     background-color: var(--verde-terciario);
 }
 
-a {
+.container-texto a {
     color: blue;
 }
 
