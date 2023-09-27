@@ -11,21 +11,106 @@
         />
         <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"
-            defer
-        ></script>
-        <link rel="stylesheet" href="./assets/style/style-global.css" />
+        <link rel="stylesheet" href="./assets/style/style-header.css" />
         <link rel="stylesheet" href="./assets/style/style-inicio.css" />
         <title>Life Style</title>
     </head>
     <body>
+        <header>
+            <div id="menu">
+                <img
+                    src="./assets/image/logo.png"
+                    id="logo"
+                    alt="logo"
+                    onclick="link()"
+                />
+
+                <div class="search">
+                    <div class="lupa">
+                        <span
+                            ><i class="fa-solid fa-magnifying-glass"></i
+                        ></span>
+                    </div>
+                    <div class="search-input">
+                        <input
+                            type="text"
+                            class="search-text"
+                            placeholder="Pesquisar..."
+                        />
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav-itens">
+                        <li><a href="#">Cadastrar-se</a></li>
+                        <li>
+                            <a href="#"
+                                ><button class="btn-entrar">Entrar</button></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  Links das páginas -->
+            <nav class="nav">
+                <div class="wrapper">
+                    <div class="navWrapper">
+                        <ul>
+                            <li>
+                                <a
+                                    href="./index.html"
+                                    style="
+                                        color: #3d7c48;
+                                        border-bottom: 2.7px solid
+                                            var(--verde-secundario);
+                                    "
+                                    >Inicial</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./assets/pages/suplementos.html"
+                                    >Suplementos</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./assets/pages/roupas.html">Roupas</a>
+                            </li>
+                            <li>
+                                <a href="./assets/pages/acessorios.html"
+                                    >Acessórios</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./assets/pages/contatos-pg.html"
+                                    target="_blank"
+                                    >Contato</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./assets/pages/sobre-pg.html"
+                                    target="_blank"
+                                    >Sobre</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navIcons">
+                        <ul>
+                            <li class="icon">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <i class="fa-solid fa-user"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <main>
-            <section id="presentation">
+            <section id="presentation" class="index-section">
                 <div>
                     <h1>Life <span>Style</span></h1>
                     <p>
@@ -38,7 +123,12 @@
                         começando sua jornada de transformação, temos tudo o que
                         você precisa.
                     </p>
-                    <a href="#" role="button" class="btn-nobs">Saiba Mais</a>
+                    <a
+                        href="./assets/pages/sobre-pg.html"
+                        role="button"
+                        class="btn-nobs"
+                        >Saiba Mais</a
+                    >
                 </div>
 
                 <img
@@ -46,7 +136,7 @@
                     alt="imagem representando caminha matinal de duas pessoas"
                 />
             </section>
-            <section id="best-products">
+            <section id="best-products" class="index-section">
                 <h2>Produtos Mais Vendidos</h2>
                 <div>
                     <div class="product-card">
@@ -84,15 +174,21 @@
                     </div>
                 </div>
             </section>
-            <section id="other-products">
+            <section id="other-products" class="index-section">
                 <h2>Confira também</h2>
                 <div>
-                    <a href="#" class="other-product-card"></a>
+                    <a
+                        href="./assets/pages/roupas.html"
+                        class="other-product-card"
+                    ></a>
 
-                    <a href="#" class="other-product-card"></a>
+                    <a
+                        href="./assets/pages/acessorios.html"
+                        class="other-product-card"
+                    ></a>
                 </div>
             </section>
-            <section id="benefits">
+            <section id="benefits" class="index-section">
                 <h2>Vantagens</h2>
                 <div>
                     <div>
@@ -191,7 +287,7 @@
                     </div>
                 </div>
             </section>
-            <section id="rating">
+            <section id="rating" class="index-section">
                 <div>
                     <h2>Avaliações da Loja</h2>
                     <p>
@@ -275,7 +371,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contact">
+            <section id="contact" class="index-section">
                 <div>
                     <div>
                         <h2>Entre em Contato!</h2>
@@ -285,11 +381,132 @@
                             hesite em nos contatar. Nossa equipe está à
                             disposição para ajudar.
                         </p>
-                        <a href="#">Página de Contato →</a>
+                        <a href="./assets/pages/contatos-pg.html"
+                            >Página de Contato →</a
+                        >
                     </div>
                     <div></div>
                 </div>
             </section>
         </main>
+        <footer class="text-center text-lg-start bg-white text-muted">
+            <!-- Section: Social media -->
+            <section
+                class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            ></section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i
+                                >Life Style
+                            </h6>
+                            <p>
+                                Estamos comprometidos em ajudar você a alcançar
+                                seus objetivos de saúde e bem-estar.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Páginas</h6>
+                            <p>
+                                <a href="./index.html" class="text-reset"
+                                    >Inicial</a
+                                >
+                            </p>
+                            <p>
+                                <a
+                                    href="./assets/pages/sobre-pg.html"
+                                    class="text-reset"
+                                    >Sobre</a
+                                >
+                            </p>
+                            <p>
+                                <a
+                                    href="./assets/pages/contato.html"
+                                    class="text-reset"
+                                    >Contato</a
+                                >
+                            </p>
+                            <p></p>
+                        </div>
+
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Produtos
+                            </h6>
+                            <p>
+                                <a
+                                    href="./assets/pages/suplementos.html"
+                                    class="text-reset"
+                                    >Suplementos</a
+                                >
+                            </p>
+                            <p>
+                                <a
+                                    href="./assets/pages/roupas.html"
+                                    class="text-reset"
+                                    >Roupas</a
+                                >
+                            </p>
+                            <p>
+                                <a
+                                    href="./assets/pages/acessorios.html"
+                                    class="text-reset"
+                                    >Acessórios</a
+                                >
+                            </p>
+                            <p></p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div
+                            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+                        >
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Informações
+                            </h6>
+                            <p>São Paulo, Brasil</p>
+                            <p>life.style@gmail.com</p>
+                            <p>11 99999-9999</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Copyright -->
+            <div
+                class="text-center p-4"
+                style="background-color: rgba(0, 0, 0, 0.025)"
+            >
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="./index.html"
+                    >lifeStyle.com</a
+                >
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

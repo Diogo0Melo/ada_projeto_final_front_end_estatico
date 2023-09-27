@@ -1,12 +1,16 @@
+@import url(./style-global.css);
 :root {
     font-size: 62.5%;
 }
 body {
     font-size: 1.6rem;
 }
-section {
+.index-section {
     display: flex;
     margin: 18rem 16rem;
+}
+.index-section:first-child {
+    margin-top: 6rem;
 }
 #presentation > div {
     width: 50%;
