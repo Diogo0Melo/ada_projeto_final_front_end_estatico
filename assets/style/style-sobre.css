@@ -1,0 +1,22 @@
+@import url(./style-global.css);
+.tamanho-carrosel{
+    width: 400px;
+    position: absolute !important;
+    right: 160px; 
+    top: 50px;
+}
+.container{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+h2{
+    color: var(--preto-secundario);
+}
+.p-sobre{
+    color: var(--preto-primario);
+}
+.text-shadow-carrosel, h5{
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
