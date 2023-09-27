@@ -1,7 +1,26 @@
 @import url(./style-global.css);
-h2{
+@import url(./style-header.css);
+h1{
     color: var(--preto-secundario);
     text-align: center;
+}
+h3{
+    /* margin-left: 30px; */
+    color: var(--preto-secundario);
+    padding: 30px;
+    padding-bottom: 0;
+}
+h4{
+    /* margin-left: 30px; */
+    color: var(--preto-secundario);
+    padding: 30px;
+    padding-bottom: 0;
+}
+p{
+    margin-left: 30px;
+    color: var(--preto-primario);
+    padding: 30px;
+    padding-bottom: 0;
 }
 .caixa-de-texto{
     padding: 10px;
