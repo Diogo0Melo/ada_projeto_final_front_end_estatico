@@ -1,7 +1,7 @@
 @import url(./style-global.css);
 @import url(./style-header.css);
 h1 {
-    color: var(--preto-secundario);
+    color: var(--verde-primario) !important;
     text-align: center;
 }
 h3 {
