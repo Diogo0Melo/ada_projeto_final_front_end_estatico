@@ -1,0 +1,260 @@
+@import url(./style-global.css);
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.index-section {
+    display: flex;
+    margin: 18rem 16rem;
+}
+.index-section:first-child {
+    margin-top: 6rem;
+}
+#presentation > div {
+    width: 50%;
+}
+#presentation > div > p {
+    margin: 4.8rem 0;
+    text-align: justify;
+}
+#presentation > img {
+    width: 50%;
+    max-height: 40rem;
+    object-fit: cover;
+    background-color: gray;
+    margin-left: 5.4rem;
+}
+h1 {
+    font-size: 7.6rem;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+h1 > span {
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom, var(--verde-terciario), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-nobs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    background-color: var(--verde-primario);
+    height: 5rem;
+    width: 18.5rem;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 1.8rem 4.8rem rgba(128, 128, 128, 0.7);
+    font-weight: 700;
+    text-decoration: none;
+}
+#best-products {
+    flex-direction: column;
+}
+#best-products > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h2 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    margin-bottom: 6.6rem;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 280px;
+    border-radius: 1rem;
+    box-shadow: 0 1.8rem 4.8rem rgba(128, 128, 128, 0.7);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.product-card > img {
+    object-fit: cover;
+    margin: 2rem;
+    height: 60%;
+}
+.product-card > h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.product-card > p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--verde-primario);
+}
+#other-products {
+    flex-direction: column;
+}
+#other-products > div {
+    display: flex;
+    justify-content: space-between;
+}
+.other-product-card {
+    display: flex;
+    width: 55rem;
+    height: 30rem;
+    background: gray;
+    background-size: cover;
+    border-radius: 4rem;
+    text-decoration: none;
+    box-shadow: 0 1.8rem 4.8rem rgba(128, 128, 128, 0.7);
+}
+
+.other-product-card:first-child {
+    background: url(./../image/card-de-roupas.jpeg) center;
+    background-size: cover;
+}
+.other-product-card:last-child {
+    background: url(./../image/card-acessorios.jpeg) center;
+    background-size: cover;
+}
+.other-product-card::after {
+    content: "Nome";
+    color: var(--verde-secundario);
+    width: 100%;
+    align-self: end;
+    padding: 1.6rem 3.2rem;
+    background-color: transparent;
+    backdrop-filter: blur(2rem);
+    border-radius: 5rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.other-product-card:first-child:after {
+    content: "Roupas";
+}
+.other-product-card:last-child:after {
+    content: "Acessórios";
+}
+
+#benefits {
+    flex-direction: column;
+}
+#benefits > div:first-of-type {
+    display: flex;
+    flex-flow: row wrap;
+}
+#benefits > div > div {
+    flex-basis: 50%;
+    margin-bottom: 6rem;
+    display: flex;
+    gap: 2rem;
+    column-gap: 3rem;
+}
+#benefits div > .icon {
+    height: 10rem;
+    width: 15rem;
+}
+#benefits > div:last-of-type {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.6rem;
+}
+.icons-box {
+    display: flex;
+    gap: 1rem !important;
+    padding: 1.6rem;
+    margin: 0 4.8rem;
+    height: 10rem;
+    max-width: 22rem;
+    border-radius: 5rem;
+    background: rgb(175, 255, 168);
+    align-items: center;
+    justify-content: center;
+}
+.icons-box > img {
+    height: 8rem;
+    width: 8rem;
+}
+.icons-box > p {
+    font-size: 1.4rem;
+}
+
+#rating {
+    flex-direction: column;
+}
+#rating > div:not([class="rating-card"]) {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+#rating > div > h2 {
+    margin-bottom: 2.4rem;
+}
+#rating > div > p {
+    width: 60%;
+    margin: auto;
+}
+#rating > div:nth-of-type(2) {
+    display: flex;
+    gap: 3.2rem;
+}
+.rating-card {
+    width: 36rem;
+    height: 40rem;
+    box-shadow: 0 1.8rem 4.8rem rgba(128, 128, 128, 0.7);
+}
+.rating-card > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.2rem;
+    height: 40%;
+}
+.rating-card > div > img {
+    height: 13rem;
+    width: 13rem;
+    background-color: gray;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rating-card > div > p:nth-child(1) {
+    color: gray;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+}
+.rating-card > div > p:nth-child(3) {
+    color: var(--verde-terciario);
+}
+#contact {
+    height: 35rem;
+    color: white;
+    border-radius: 3.2rem;
+    box-shadow: 0 1.8rem 4.8rem rgba(128, 128, 128, 0.7);
+}
+#contact > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#contact > div > div:first-child {
+    width: 70%;
+    background-color: var(--preto-secundario);
+    border-radius: 3.2rem 0 0 3.2rem;
+    padding: 6rem 0 0 6rem;
+}
+#contact > div > div:last-child {
+    width: 30%;
+    background-color: gray;
+    border-radius: 0 3.2rem 3.2rem 0;
+}
+#contact > div > div > h2 {
+    margin-bottom: 0;
+}
+#contact > div > div > p {
+    width: 75%;
+    color: gray;
+    margin: 3.2rem 0;
+}
+#contact > div > div > a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}

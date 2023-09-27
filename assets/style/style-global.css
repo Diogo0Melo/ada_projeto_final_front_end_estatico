@@ -8,7 +8,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
 }
 :root {
     --verde-primario: #7ed957;

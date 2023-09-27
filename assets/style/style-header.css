@@ -1,5 +1,4 @@
 @import url(style-global.css);
-
 .nav-itens li a{
     font-weight: 500;
     font-size: 13px;
@@ -33,7 +32,7 @@
 }
 
 .nav-itens li a{
-    padding-bottom: 10px;
+    padding-bottom: 10px;;
 }
 
 .nav-itens li a:hover{
