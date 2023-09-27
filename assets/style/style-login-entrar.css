@@ -1,0 +1,92 @@
+@import url(./style-global.css);
+
+form {
+    border: 2px solid var(--verde-primario);
+    padding: 20px;
+    border-radius: 3px;
+}
+
+form h3 {
+    text-align: center;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    /* background-color: rgb(241, 239, 239); */
+    padding: 6px 12px;
+    border-radius: 3px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+form input[type="checkbox"] {
+    width: auto;
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: var(--verde-primario);
+    transition: 300ms;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: var(--verde-terciario);
+}
+
+.container-texto a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form small > a {
+    color: black;
+}
+
+form > small:hover {
+    text-decoration: underline;
+}
+
+.form-item {
+    margin-bottom: 16px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.container-texto {
+    margin: 40px;
+}
+
+.container-form {
+    margin: 40px;
+}
+
+#texto-login {
+    position: relative;
+    bottom: 260px;
+    vertical-align: middle;
+}
+
+@media screen and (orientation: portrait) {
+
+    .container, .container-texto, .container-form {
+        display: block;
+    }
+
+    #texto-login {
+        position: relative;
+        bottom: 0%;
+    }
+
+}
