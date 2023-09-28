@@ -1,5 +1,5 @@
-@import url(./style-global.css);
-@import url(./style-header.css);
+@import url(../style-global.css);
+@import url(../header-login/style-header.css);
 h1 {
     color: var(--verde-primario) !important;
     text-align: center;

@@ -1,0 +1,39 @@
+@import url(../style-global.css);
+@import url(../header-login/style-header.css);
+.tamanho-carrosel{
+    width: 450px;
+    position: relative !important;
+    left: 120px; 
+    bottom: 50px;
+    display: inline-block;
+}
+
+.container{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+h1{
+    color: var(--verde-primario) !important;
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 60px !important;
+    width: 350px;
+}
+.p-sobre{
+    color: var(--preto-primario);
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    bottom: 90px;
+    font-size: 18px;
+}
+.container>p:nth-last-of-type(1){
+    color: var(--preto-primario);
+    font-size: 18px;
+    padding: 0 32px;
+}
+.text-shadow-carrosel, h5{
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}

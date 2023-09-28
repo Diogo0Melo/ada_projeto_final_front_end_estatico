@@ -1,4 +1,4 @@
-@import url(./style-global.css);
+@import url(../style-global.css);
 :root {
     font-size: 62.5%;
 }
@@ -109,11 +109,11 @@ h2 {
 }
 
 .other-product-card:first-child {
-    background: url(./../image/card-de-roupas.jpeg) center;
+    background: url(../../image/card-de-roupas.jpeg) center;
     background-size: cover;
 }
 .other-product-card:last-child {
-    background: url(./../image/card-acessorios.jpeg) center;
+    background: url(../../image/card-acessorios.jpeg) center;
     background-size: cover;
 }
 .other-product-card::after {

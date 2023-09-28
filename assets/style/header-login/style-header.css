@@ -1,4 +1,4 @@
-@import url(style-global.css);
+@import url(../style-global.css);
 .nav-itens li a{
     font-weight: 500;
     font-size: 13px;
